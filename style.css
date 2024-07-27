@@ -1,3 +1,7 @@
+:root {
+  --color-primary: #d3869b;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -11,12 +15,14 @@ body {
   justify-content: center;
   align-items: center;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Open Sans', Roboto, Oxygen, Ubuntu, sans-serif;
+  font-size: 0.850rem;
   background: url(./assets/background.png);
   color: #ebdbb2;
 }
 
 main {
   width: 70%;
+  max-width: 650px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   gap: 1rem;
@@ -34,8 +40,9 @@ a {
   border-radius: 1rem;
 }
 
-a span::hover {
-  color: #689d6a;
+a:hover {
+  color: var(--color-primary);
+  transition: 0.3s;
 }
 
 i {
